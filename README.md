@@ -16,7 +16,7 @@ sure you have an adult's assistance when building the tree. A set of needle-nose
 |10 | [ZD0170](http://jaycar.com.au/p/ZD0170) | 5mm green LED
 
 ## Connection Diagram
-![](../images/Duinotech LED Christmas Tree.png)
+![](images/Duinotech LED Christmas Tree.png)
 ## Downloads
 * [Source code](../downloads/LED_christmas_tree.zip)
 
@@ -36,17 +36,17 @@ the legs, bend the legs straight down (2). We want to make sure that the legs ru
 LED. Finally, bend the left leg towards you be about 10 degrees and bend the right leg back by 10 degrees. The
 result should be like (3).
 
-![](../images/NPI00009b.png)
+![](images/NPI00009b.png)
 
 You'll notice that one leg is longer than the other. This is normal, and is used to differentiate the cathode (negative terminal, and it also has a flat on the body of the LED near it) from the anode (or positive terminal). We'll need to know this later so our LED's go onto the board the correct way.
 
 The next step is to fit the resistors to the prototyping board- we'll do this because they'll sit lower than the LED's, and they'll be hard to get to if the LED's went in first.
 
-![](../images/NPI00009c.jpg)
+![](images/NPI00009c.jpg)
 
 otice that one end of the resistors is at the fourth row of holes in line with the large hole at the end of the prototyping board, and they are spaced three holes apart in line with D1, D4, D7, between D9 and D10, and between D12 and D13. The other end of the resistor is in the sixth row of holes away from the analog pins.
 
-![](../images/NPI00009d.jpg)
+![](images/NPI00009d.jpg)
 
 Then we mount the LED's. The short leg of the LED gets mounted on the end of the resistor leg- this gives it a bit more height. Then the other leg of the LED gets soldered to a hole on the protoboard three holes over, and three holes across. For most of the LED's, this means their anode (the long leg) is actually in line with the next resistor over. This should give us the legs of the LED's running clear of either side of the bodies. Note the colours too- we've done a red LED at the end and three green LED's in the middle. Keep following the pattern from the above photo as we build up.
 
@@ -54,11 +54,11 @@ Solder the negative lead of the next row of LED's to the negative lead of the pr
 
 As we keep building up, note that all the negative leads are on the side with the resistors, and all of them slope to the right at roughly the same angle, and all the positive leads are on the other side, sloping the other way. Complete the rows of three, two and one LED's in a similar fashion, and check against the picture below.
 
-![](../images/NPI00009e.jpg)
+![](images/NPI00009e.jpg)
 
 The final wiring step is to connect the LED matrix we have built back to the pins that go to the Uno board. In order, the positive leads go to D2, D3, D4, D5 and D6, while the resistors go to A1, A2, A3, A4 and A5.
 
-![](../images/NPI00009f.jpg)
+![](images/NPI00009f.jpg)
 
 ## Programming
 Download the source code and extract into a new folder, open the .ino file in the Arduino IDE and press upload.
