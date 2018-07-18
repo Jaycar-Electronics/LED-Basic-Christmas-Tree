@@ -16,13 +16,7 @@ sure you have an adult's assistance when building the tree. A set of needle-nose
 |10 | [ZD0170](http://jaycar.com.au/p/ZD0170) | 5mm green LED
 
 ## Connection Diagram
-![](images/Duinotech LED Christmas Tree.png)
-## Downloads
-* [Source code](../downloads/LED_christmas_tree.zip)
-
-## Software Libraries
-|Library | Author
-| --- |--- |
+![](images/Duinotech_LED_Christmas_Tree.png)
 
 
 ## Assembly
@@ -44,7 +38,7 @@ The next step is to fit the resistors to the prototyping board- we'll do this be
 
 ![](images/NPI00009c.jpg)
 
-otice that one end of the resistors is at the fourth row of holes in line with the large hole at the end of the prototyping board, and they are spaced three holes apart in line with D1, D4, D7, between D9 and D10, and between D12 and D13. The other end of the resistor is in the sixth row of holes away from the analog pins.
+Notice that one end of the resistors is at the fourth row of holes in line with the large hole at the end of the prototyping board, and they are spaced three holes apart in line with D1, D4, D7, between D9 and D10, and between D12 and D13. The other end of the resistor is in the sixth row of holes away from the analog pins.
 
 ![](images/NPI00009d.jpg)
 
@@ -69,9 +63,9 @@ There aren't any special libraries to load or install, it's simply a case of ope
 
 ## Use
 
-As mentioned above, you can change the pattern by changing values in the tree[] array. You might want to add a sensor, and have the tree change patterns if a change is detected in the sensor.
+As mentioned above, you can change the pattern by changing values in the `tree[]` array. You might want to add a sensor, and have the tree change patterns if a change is detected in the sensor.
 
-If you're interested in how the multiplexing works, you can change the following line in the treesetup() function to slow down the scanning. Change:
+If you're interested in how the multiplexing works, you can change the following line in the `treesetup()` function to slow down the scanning. Change:
 
 ```c
 TCCR1B = _BV(WGM12) | _BV(CS10);
